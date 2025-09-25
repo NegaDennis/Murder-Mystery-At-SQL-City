@@ -122,11 +122,13 @@ red hair and she drives a Tesla Model S. I know that she attended the SQL Sympho
 ### Checking databases
 
 Let's cross check with the database to see who fit all the boxes. These include:
+```
 (1) female
 (2) height (65" -> 67")
 (3) red hair
 (4) drives Tesla, Model S
 (5) been to SQL Symphony Concert 3 times during 12/2017
+```
 
 One semi-complex query later:
 

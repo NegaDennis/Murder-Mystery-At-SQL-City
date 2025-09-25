@@ -115,8 +115,9 @@ step with no more than 2 queries. Use this same INSERT statement with your new s
 ### Interview with the killer
 
 ![interviewing killer](https://github.com/user-attachments/assets/60bfd872-1937-47e0-8db2-fbdeaffbb369)
+Photo by [Kindel Media](https://www.pexels.com/photo/an-officer-talking-to-a-man-7785067/)
 
-After catching the perp, interview with him revealed that there is a MASTERMIND behind and he was just a hired gun. The challenge is to find this individual with less than 2 queries.
+After catching the perp, interview with him revealed that there is a MASTERMIND behind and he was just a hired gun (he's smiling because the police promised him some candies later for the snitch :) ).
 
 The interview with the killer provided the following statements:
 ```

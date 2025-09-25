@@ -30,6 +30,8 @@ Original code for this project is released under the MIT License
 Original text and other content for this project is released under Creative Commons CC BY-SA 4.0
 ```
 
+## TL;DR
+Here's the a [picture](https://github.com/user-attachments/assets/ee33501c-cd25-4107-8648-d5431e18eb34) that show steps taken to solution.
 
 ## THERE HAS BEEN A MURDER AT SQL CITY
 

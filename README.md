@@ -46,7 +46,7 @@ Yes, there has been a murder at SQL City. The detectives need our help to comb t
 
 A team of professionals was dispatched to the crime scene and collected several statements from witnesses at the scene.
 
-A simple query that filters crime scene reports based on date, location, and type of crime produced showed the following report:
+A simple query that filters crime scene reports based on date, location, and type of crime showed the following report:
 ```
 "Security footage shows that there were 2 witnesses. The first witness lives at the last house on "Northwestern Dr".
 The second witness, named Annabel, lives somewhere on "Franklin Ave" "

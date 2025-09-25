@@ -1,11 +1,6 @@
 # Murder-Mystery-At-SQL-City
 Solving a murder mystery through SQL!
 
-## But why?
-SQL is one of the most important skills in data analysist+/data science scene and I want to show that I can do it and practice it. However, I want it to be fun!
-
-I have done so many other business-oriented projects and challenges and culmulated a good amount of skills working with SQL. This 'murder mystery' puzzle would be a fun way to demonstate them. In this repo, I will show you step-by-step on how I did 'detective work' through SQL and caught our perp! I will add visuals along the way to keep things interesting :)
-
 ## Introduction
 This SQL murder mystery is from  [Kaggle](https://www.kaggle.com/datasets/johnp47/sql-murder-mystery-database/data). According to its description, it was created by [Joon Park](https://x.com/JoonParkMusic) and [Cathy He](https://x.com/Cathy_MeiyingHe) while they were Knight Lab fellows. Thanks for the fun puzzle :)
 
@@ -30,28 +25,35 @@ Original code for this project is released under the MIT License
 Original text and other content for this project is released under Creative Commons CC BY-SA 4.0
 ```
 
+## But why?
+SQL is one of the most important skills in data analysist+/data science scene and I want to show that I can do it and practice. However, I want it to be fun!
+
+The SQL skills used in this mystery solving project include basic stuffs (SELECT, FROM, ORDER BY, etc.) and some intermediate features (JOIN, Nested query, etc.). If you want to play along, I attached the relevant links where you can download database and solve it yourself. I didn't time it but I definitely used less than 20 minutes. Think you can do it faster ? ;)
+
 ## TL;DR
+
 Here's the a [picture](https://github.com/user-attachments/assets/ee33501c-cd25-4107-8648-d5431e18eb34) that show steps taken to solution.
 
 ## THERE HAS BEEN A MURDER AT SQL CITY
 
 ![crimescene](https://github.com/user-attachments/assets/a4f5edc1-dab6-4257-b5dc-0f3f3ca2fa4a)
-
 Photo by <a href="https://unsplash.com/@nampoh?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Maxim Hopman</a> on <a href="https://unsplash.com/photos/silhouette-of-person-on-window-PEJHULxUHZs?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
       
 Yes, there has been a murder at SQL City. The detectives need our help to comb through [databases](https://github.com/NUKnightLab/sql-mysteries/blob/master/schema.png) and find relevant information about the case.
 
 
-### Getting crime scene report
+### 1 - Getting crime scene report
 
 A team of professionals was dispatched to the crime scene and collected several statements from witnesses at the scene.
 
 A simple query that filters crime scene reports based on date, location, and type of crime produced showed the following report:
+```
+"Security footage shows that there were 2 witnesses. The first witness lives at the last house on "Northwestern Dr".
+The second witness, named Annabel, lives somewhere on "Franklin Ave" "
+```
 
-*"Security footage shows that there were 2 witnesses. The first witness lives at the last house on "Northwestern Dr". The second witness, named Annabel, lives somewhere on "Franklin Ave" "*
 
-
-### Reading witnesses' interviews
+### 2 - Reading witnesses' interviews
 
 Following that trail, we got the following statement from the witnesses:
 
@@ -60,7 +62,7 @@ Witness 1 - Morty Schapiro:
 <img width="685" height="78" alt="witness1" src="https://github.com/user-attachments/assets/d27df2ce-484d-4abd-afd8-39f64f27e289" />
 
 ```
-Testament: "I heard a gunshot and then saw a man run out. He had a "Get Fit Now Gym" bag. The membership number on the bag
+"I heard a gunshot and then saw a man run out. He had a "Get Fit Now Gym" bag. The membership number on the bag
 started with "48Z". Only gold members have those bags. The man got into a car with a plate that included "H42W"."
 ```
 
@@ -69,11 +71,11 @@ Witness 2 - Annabel Miller:
 <img width="687" height="72" alt="witness2" src="https://github.com/user-attachments/assets/0d6b95d2-905e-48c6-af2b-ea535a994506" />
 
 ```
-Testament: *"I saw the murder happen, and I recognized the killer from my gym when I was working out last week on January the 9th."*
+"I saw the murder happen, and I recognized the killer from my gym when I was working out last week on January the 9th."
 ```
 
 
-### Checking clues
+### 3 - Checking clues
 
 Let's first see who was in the "Get Fit Now" gym on 9th January and fit the membership number and status.
 
@@ -83,9 +85,9 @@ Now let's check the driver_license to see whose car fit the number plate descrip
 
 <img width="481" height="133" alt="list of sus2" src="https://github.com/user-attachments/assets/0900e79e-8d11-41fd-8ecd-989f687db5b0" />
 
-### Checking answer
+### 4 - Checking answer
 
-Ahha! There is only 1 name that appear in both list. This has to be our perp! Now we let the witness who saw the murderer,Annabel Miller, see our suspect's picture to verify.  
+Ahha! There is only 1 name that appear in both list. This has to be our perp! Now we let eye-witness, Annabel Miller, see our suspect's picture to verify.  
 
 ```
 -- Showing picture to witness 
@@ -102,7 +104,7 @@ Photo by [Kindel Media](https://www.pexels.com/photo/a-man-in-black-shirt-arrest
 
 Hurray! We found the killer with SQL!
 
-## BONUS: The Mastermind
+## ...But wait, there's more...
 
 ```
 ...But wait, there's more... If you think you're up for a challenge, try querying the interview transcript of the murderer
@@ -110,10 +112,11 @@ to find the real villain behind this crime. If you feel especially confident in 
 step with no more than 2 queries. Use this same INSERT statement with your new suspect to check your answer.
 ```
 
-After catching the perp, interview with him revealed that there is a MASTERMIND behind and he was just a hired gun. The challenge is to find this individual with less than 2 queries.
-
-
 ### Interview with the killer
+
+![interviewing killer](https://github.com/user-attachments/assets/60bfd872-1937-47e0-8db2-fbdeaffbb369)
+
+After catching the perp, interview with him revealed that there is a MASTERMIND behind and he was just a hired gun. The challenge is to find this individual with less than 2 queries.
 
 The interview with the killer provided the following statements:
 ```
